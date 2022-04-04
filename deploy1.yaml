@@ -1,0 +1,22 @@
+id: 'geo-search'
+description: 'This is a geo search template'
+global_vars: 
+  - 
+    description: <p><p>
+    key: ES_CREDS
+    label: "Elasticsearch Creds"
+    value: "https://demo-appbase.io"
+  - 
+    description: "This is the Elasticsearch URL. Read more over here"
+    key: ES_URL
+    label: "Elasticsearch URL"
+    value: "sample"
+  - 
+    key: KNOWLEDGE_GRAPH_API_KEY
+    label: "Knowledge Graph API Key"
+    validate: 
+      - 
+        expected_status: 204
+        headers: JSON
+        method: POST
+        url: "https://my-url/${ES_URL}/"
