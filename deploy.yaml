@@ -1,5 +1,5 @@
-id: 'geo-search'
-description: 'This is a geo search template'
+--- 
+description: "This is a geo search template"
 global_vars: 
   - 
     description: <p><p>
@@ -10,13 +10,15 @@ global_vars:
     description: "This is the Elasticsearch URL. Read more over here"
     key: ES_URL
     label: "Elasticsearch URL"
-    value: "sample"
+    value: sample
   - 
     key: KNOWLEDGE_GRAPH_API_KEY
     label: "Knowledge Graph API Key"
     validate: 
       - 
         expected_status: 204
-        headers: JSON
+        headers: 
+          Authorization: "Basic ${ES_CREDS}"
         method: POST
         url: "https://my-url/${ES_URL}/"
+id: geo-search
