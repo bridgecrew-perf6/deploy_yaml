@@ -20,5 +20,5 @@ global_vars:
         headers: 
           Authorization: "Basic ${ES_CREDS}"
         method: GET
-        url: "https://my-url/${ES_URL}/"
+        url: "https://reqres.in/${ES_URL}/"
 id: geo-search
