@@ -19,6 +19,6 @@ global_vars:
         expected_status: 204
         headers: 
           Authorization: "Basic ${ES_CREDS}"
-        method: POST
+        method: GET
         url: "https://my-url/${ES_URL}/"
 id: geo-search
